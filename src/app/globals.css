@@ -1,0 +1,52 @@
+@import "tailwindcss";
+@tailwind utilities;
+@plugin "daisyui" {
+  themes: emerald --default;
+}
+
+@layer base {
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-[Englebert] uppercase;
+  }
+  
+  h1 {
+    @apply text-4xl font-bold;
+    @apply pb-5;
+  }
+
+  h2 {
+    @apply text-3xl;
+    @apply pb-5;
+  }
+
+  h3 {
+    @apply text-xl;
+    @apply pb-2;
+
+  }
+
+  p {
+    @apply pb-3;
+  }
+
+  p, span, div, li {
+    @apply font-[Architects_Daughter];
+  }
+  
+  button, .btn {
+    @apply font-[Architects_Daughter] uppercase;
+  }
+
+  section {
+    @apply px-6 lg:px-12 max-w-6xl mx-auto;
+    @apply py-10 mb-16
+  }
+
+  .font-mono {
+    @apply !font-[Englebert] uppercase;
+  }
+  
+  .timeline-start {
+    @apply mx-2;
+  }
+}
