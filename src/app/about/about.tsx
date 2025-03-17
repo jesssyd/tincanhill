@@ -1,6 +1,6 @@
 export default function AboutUs() {
   return (
-    <section>
+    <section className="max-w-3xl">
       <div className="container">
         <h2>About</h2>
         <div className="flex flex-col gap-6">

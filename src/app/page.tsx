@@ -1,6 +1,7 @@
 import Hero from "./ui/hero";
 import Media from "./ui/media";
 import CardLayout from "./ui/cardLayout";
+import Form from "./ui/form";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
         text="Lorem ipsum dolor sit amet consectetur. In vitae lacus sagittis vitae eget felis vestibulum.. Sagittis mi eleifend viverra pellentesque orci diam duis magna viverra.. Rhoncus tellus lorem viverra euismod non velit.. Dictum id tincidunt tortor egestas. Dignissim tellus pulvinar libero ornare porta a posuere.. Lectus sed ligula quam sed velit.. Tristique suscipit urna ut augue. Adipiscing enim dignissim ac in morbi nunc ligula volutpat.."
       />
       <CardLayout />
+      <Form/>
     </main>
   );
 }

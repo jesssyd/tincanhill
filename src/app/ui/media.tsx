@@ -11,7 +11,28 @@ interface MediaProps {
 export default function Media({ src, alt, title, text }: MediaProps) {
   return (
     <section>
-      <div className="flex flex-row-reverse items-start gap-8 md:gap-12">
+      <div>
+        <div className="flex gap-8 lg:gap-12 items-start lg:items-center flex-col lg:flex-row">
+          <Image
+            src={src}
+            alt={alt}
+            width={1000}
+            height={1000}
+            className="block max-w-sm rounded-md object-cover max-h-32"
+          />
+          <div className="max-w-lg">
+            <h2 className="text-4xl font-bold">The Tin Can Hill Committee</h2>
+            <p className="text-lg text-gray-600">
+              Founded in 2023, the Tin Can Hill Committee is a group of
+              dedicated members from across the NWT who are seeking permanent
+              protection for Tin Can Hill.
+            </p>
+            <Button href="/about" text="Continue Reading" />
+          </div>
+        </div>
+      </div>
+
+      {/* <div className="flex flex-row-reverse items-start gap-8 md:gap-12">
         <div className="w-full md:w-[40%] lg:w-[35%]">
           <Image
             src={src}
@@ -26,7 +47,7 @@ export default function Media({ src, alt, title, text }: MediaProps) {
           <p className="text-lg text-gray-600">{text}</p>
           <Button href="/about" text="Continue Reading" />
         </div>
-      </div>
+      </div> */}
     </section>
   );
 }

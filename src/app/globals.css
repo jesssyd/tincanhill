@@ -49,4 +49,9 @@
   .timeline-start {
     @apply mx-2;
   }
+
+  .logo {
+    @apply font-[Englebert] uppercase;
+    @apply text-xl font-bold uppercase;
+  }
 }

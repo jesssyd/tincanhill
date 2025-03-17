@@ -1,19 +1,6 @@
 import Button from "./button";
 import Link from "next/link";
-
-interface FooterLinks {
-  name: string;
-  path: string;
-  children?: FooterLinks;
-}
-
-const footerLinks: FooterLinks[] = [
-  { name: "Home", path: "/" },
-  { name: "Shop", path: "/shop" },
-  { name: "Events", path: "/shop" },
-  { name: "About", path: "/about" },
-  { name: "Get Involved", path: "/support" },
-];
+import { footerLinks } from "../lib/navigation";
 
 export default function Foot() {
   return (
