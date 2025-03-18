@@ -2,7 +2,7 @@ import Card from "./card";
 
 export default function CardLayout() {
   return (
-    <section className="bg-base-200 py-20">
+    <section className="bg-base-300 py-20">
       <h2 className="text-4xl font-bold">How You Can Help</h2>
       <div className="flex justify-around md:gap-8 gap-3 flex-row flex-wrap sm:flex-nowrap">
         
@@ -33,7 +33,7 @@ export default function CardLayout() {
         <Card
           title="Grab some Merch"
           buttonProps={{
-            href: "/",
+            href: "/shop",
             text: "Buy Now",
             className: "btn-primary",
           }}

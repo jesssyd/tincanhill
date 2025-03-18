@@ -18,7 +18,7 @@ export default function Media({ src, alt, title, text }: MediaProps) {
             alt={alt}
             width={1000}
             height={1000}
-            className="block max-w-sm rounded-md object-cover max-h-32"
+            className="max-w-[200px] sm:max-w-1/3 h-auto rounded-md object-cover"
           />
           <div className="max-w-lg">
             <h2 className="text-4xl font-bold">The Tin Can Hill Committee</h2>
@@ -27,7 +27,11 @@ export default function Media({ src, alt, title, text }: MediaProps) {
               dedicated members from across the NWT who are seeking permanent
               protection for Tin Can Hill.
             </p>
-            <Button href="/about" text="Continue Reading" />
+            <Button
+              href="/about"
+              text="Continue Reading"
+              className="btn-neutral"
+            />
           </div>
         </div>
       </div>

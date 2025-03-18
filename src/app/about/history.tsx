@@ -2,7 +2,7 @@ import Button from "../ui/button";
 
 export default function History() {
   return (
-    <section className="max-w-3xl">
+    <section className="max-w-3xl bg-base-200 rounded-2xl">
       <div className="pb-5">
         <h2>Tin Can Hill Throughout History</h2>
         <p>Click Below to Read the Full History</p>

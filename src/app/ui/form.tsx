@@ -40,7 +40,7 @@ export default function Form() {
                 form=""
                 defaultValue=""
               >
-                <option disabled value="" className="input">
+                <option disabled value="" className="">
                   Membership Level
                 </option>
                 <option value="Mailing List">Mailing List</option>

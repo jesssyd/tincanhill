@@ -9,7 +9,7 @@ export default function Navbar() {
       <div className="drawer-content flex flex-col">
         {/* Navbar */}
         <div className="navbar w-full ">
-          <div className="flex-none lg:flex-auto navbar-start">
+          <div className="flex-auto navbar-start">
             <label
               htmlFor="my-drawer-3"
               aria-label="open sidebar"
@@ -45,7 +45,7 @@ export default function Navbar() {
             </ul>
           </div>
           <div className="hidden lg:flex navbar-end">
-            <Button href="/" text="Support" />
+            <Button href="/" text="Support" className="btn-secondary"/>
           </div>
         </div>
       </div>
@@ -68,7 +68,7 @@ export default function Navbar() {
               <Link href={link.path}>{link.name}</Link>
             </li>
           ))}
-          <Button href="/" text="Support" className="w-fit btn-secondary"/>
+          <Button href="/" text="Support" className="mt-4 w-fit btn-secondary"/>
         </ul>
          
       </div>

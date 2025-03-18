@@ -1,13 +1,26 @@
 import AboutUs from "./about";
 import History from "./history";
-import HeadImg from "../ui/headImg"
+import Banner from "../ui/banner";
+import Product from "../ui/product";
 
 export default function About() {
   return (
-    <main className="pt-10 mx-auto">
-      <HeadImg/>
+    <main className="mx-auto">
+      <Banner
+        title="About Us"
+        body="Learn about who we are, what our mission is and the history of Tin
+              Can Hill."
+      />
       <AboutUs />
-      <div className="divider px-8"></div>
+      {/* <section>
+        <h2>Why Tin Can Hill?</h2>
+        <div className="flex gap-6">
+          <Product />
+          <Product />
+          <Product />
+        </div>
+      </section> */}
+      {/* <div className="divider px-8"></div> */}
       <History />
     </main>
   );

@@ -1,8 +1,44 @@
 @import "tailwindcss";
 @tailwind utilities;
-@plugin "daisyui" {
-  themes: emerald --default;
+@plugin "daisyui";
+
+@plugin "daisyui/theme" {
+  name: "tin-can-hill";
+  default: false;
+  prefersdark: false;
+  color-scheme: "light";
+  --color-base-100: oklch(100% 0 0);
+  --color-base-200: oklch(100% 0 0);
+  --color-base-300: oklch(98% 0.003 247.858);
+  --color-base-content: oklch(29.59% 0.0163 280.34);
+  --color-primary: oklch(61.92% 0.1091 144.47);
+  --color-primary-content: oklch(100% 0 0);
+  --color-secondary: oklch(75.12% 0.1187 237.23);
+  --color-secondary-content: oklch(36.69% 0.029 307.59);
+  --color-accent: oklch(80.72% 0.1353 77.62);
+  --color-accent-content: oklch(41% 0.112 45.904);
+  --color-neutral: oklch(29.59% 0.0163 280.34);
+  --color-neutral-content: oklch(92% 0.004 286.32);
+  --color-info: oklch(56.87% 0.1565 286.87);
+  --color-info-content: oklch(28% 0.141 291.089);
+  --color-success: oklch(75.8% 0.1133 150.84);
+  --color-success-content: oklch(30.5% 0.0349 147.71);
+  --color-warning: oklch(64.42% 0.169 331.59);
+  --color-warning-content: oklch(28% 0.109 3.907);
+  --color-error: oklch(36.5% 0.119 29.47);
+  --color-error-content: oklch(94% 0.03 12.58);
+  --radius-selector: 0.5rem;
+  --radius-field: 0.25rem;
+  --radius-box: 0.5rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 0;
+  --noise: 0;
 }
+
+
+/* themes: emerald --default; */
 
 @layer base {
   h1, h2, h3, h4, h5, h6 {
@@ -15,12 +51,12 @@
   }
 
   h2 {
-    @apply text-3xl;
+    @apply text-4xl font-bold;
     @apply pb-5;
   }
 
   h3 {
-    @apply text-xl;
+    @apply text-2xl;
     @apply pb-2;
 
   }
@@ -38,8 +74,8 @@
   }
 
   section {
-    @apply px-6 lg:px-12 max-w-6xl mx-auto;
-    @apply py-10 mb-16
+    @apply px-4 lg:px-12 max-w-6xl mx-auto;
+    @apply py-4 mb-6
   }
 
   .font-mono {

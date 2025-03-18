@@ -4,7 +4,7 @@ import { footerLinks } from "../lib/navigation";
 
 export default function Foot() {
   return (
-    <footer className="footer footer-horizontal footer-center bg-base-200 text-base-content rounded p-10">
+    <footer className="footer footer-horizontal footer-center bg-base-300 text-base-content rounded p-10">
       <nav className="grid grid-flow-col gap-4">
         {footerLinks.map((link) => (
           <Link key={link.name} className="link link-hover" href={link.path}>
@@ -19,8 +19,10 @@ export default function Foot() {
       <nav>
         <div className="grid grid-flow-col gap-4">
           <a
+            rel="noopener"
             aria-label="Tin Can Hill Facebook Group"
             href="https://www.facebook.com/groups/tincanhill"
+            target="_blank"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
