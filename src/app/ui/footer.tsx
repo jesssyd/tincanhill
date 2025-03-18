@@ -1,4 +1,3 @@
-import Button from "./button";
 import Link from "next/link";
 import { footerLinks } from "../lib/navigation";
 

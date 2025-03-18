@@ -53,7 +53,7 @@ export default function History() {
             <div className="text-lg font-black pb-1 pt-2">
               Prospectors and the Discovery of Gold
             </div>
-            Klondike-bound prospectors and Johnny Baker's gold discovery sparked
+            Klondike-bound prospectors and Johnny Baker&apos;s gold discovery sparked
             a staking rush around Yellowknife Bay. Tin Can Hill played a pivotal
             role in the early exploration and staking of claims- it hosted
             exploration camps, transportation corridors, and there were docks
@@ -85,7 +85,7 @@ export default function History() {
               Conservation and Cleanup Efforts
             </div>
             Early conservation efforts, such as the Ecology North cleanup in
-            1971, aimed to preserve Tin Can Hill. The "Ajax" project addressed
+            1971, aimed to preserve Tin Can Hill. The &quot;Ajax&quot; project addressed
             historical garbage deposits, emphasizing environmental stewardship.
           </div>
           <hr />
@@ -157,8 +157,8 @@ export default function History() {
             <time className="font-mono pb-3 ">2004</time>
             <div className="text-lg font-black pb-1 pt-2">Residential Development</div>
             The disconnect between residents desires to protect the Hill and the
-            City of Yellowknife's development agendas continued. In 2004, City
-            Council's vote in favor of residential development on Tin Can Hill
+            City of Yellowknife&apos;s development agendas continued. In 2004, City
+            Council&apos;s vote in favor of residential development on Tin Can Hill
             sparked ongoing debates.
           </div>
           <hr />
@@ -187,7 +187,7 @@ export default function History() {
             of development. City Councillor Mark Heyck led preservation efforts
             and City Council decided to remove references to residential
             development from the General Plan. Meanwhile, residential projects
-            on the hill's periphery were approved.
+            on the hill&apos;s periphery were approved.
           </div>
           <hr />
         </li>
@@ -237,9 +237,8 @@ export default function History() {
             <div className="text-lg font-black pb-1 pt-2">
               Rezoning Success and Designations
             </div>
-            In January 2012, Tin Can Hill was successfully rezoned from "Growth
-            Management" to "Parks and Recreation" by a pro-preservation City
-            Council. It was also designated as an "off-leash dog park," and
+            In January 2012, Tin Can Hill was successfully rezoned from &quot;Growth Management&quot; to &quot;Parks and Recreation&quot; by a pro-preservation City
+            Council. It was also designated as an &quot;off-leash dog park,&quot; and
             received some park-like amenities, including trash cans and a
             boardwalk.
           </div>
@@ -295,8 +294,8 @@ export default function History() {
             successfully made the future of the Hill an issue in the 2023
             territorial election, with most Yellowknife candidates opposing
             development of a University campus on the Hill. The TCHCC continues
-            its efforts to raise awareness of the Hill's key services to
-            Yellowknife's, and works to obtain permanent protection of the Hill
+            its efforts to raise awareness of the Hill&apos;s key services to
+            Yellowknife&apos;s, and works to obtain permanent protection of the Hill
             as a Territorial Park.
           </div>
         </li>
