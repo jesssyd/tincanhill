@@ -1,7 +1,6 @@
 import AboutUs from "./about";
 import History from "./history";
 import Banner from "../ui/banner";
-import Product from "../ui/product";
 
 export default function About() {
   return (

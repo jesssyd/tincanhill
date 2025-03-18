@@ -6,8 +6,8 @@ export default function Form() {
           <div className="text-center lg:text-left">
             <h1 className="text-4xl font-bold">Join Us!</h1>
             <p className="pb-6 max-w-md">
-              If you would you like to be apart of our team's protection efforts
-              or if you'd just like to be added to our distribution list sign up
+              If you would you like to be apart of our team&apos;s protection efforts
+              or if you&apos;d just like to be added to our distribution list sign up
               now!
             </p>
           </div>

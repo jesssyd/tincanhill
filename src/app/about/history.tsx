@@ -53,15 +53,15 @@ export default function History() {
             <div className="text-lg font-black pb-1 pt-2">
               Prospectors and the Discovery of Gold
             </div>
-            Klondike-bound prospectors and Johnny Baker&apos;s gold discovery sparked
-            a staking rush around Yellowknife Bay. Tin Can Hill played a pivotal
-            role in the early exploration and staking of claims- it hosted
-            exploration camps, transportation corridors, and there were docks
-            along its shores. It was also a favourite playground for kids from
-            the mining camp and the Yellowknife townsite. The first road linking
-            the new town of Yellowknife and Con Mine traversed Tin Can Hill. It
-            played a crucial role in transportation during the early years of
-            settlement.
+            Klondike-bound prospectors and Johnny Baker&apos;s gold discovery
+            sparked a staking rush around Yellowknife Bay. Tin Can Hill played a
+            pivotal role in the early exploration and staking of claims- it
+            hosted exploration camps, transportation corridors, and there were
+            docks along its shores. It was also a favourite playground for kids
+            from the mining camp and the Yellowknife townsite. The first road
+            linking the new town of Yellowknife and Con Mine traversed Tin Can
+            Hill. It played a crucial role in transportation during the early
+            years of settlement.
           </div>
           <hr />
         </li>
@@ -85,8 +85,9 @@ export default function History() {
               Conservation and Cleanup Efforts
             </div>
             Early conservation efforts, such as the Ecology North cleanup in
-            1971, aimed to preserve Tin Can Hill. The &quot;Ajax&quot; project addressed
-            historical garbage deposits, emphasizing environmental stewardship.
+            1971, aimed to preserve Tin Can Hill. The &quot;Ajax&quot; project
+            addressed historical garbage deposits, emphasizing environmental
+            stewardship.
           </div>
           <hr />
         </li>
@@ -155,11 +156,13 @@ export default function History() {
           </div>
           <div className="timeline-end mb-10">
             <time className="font-mono pb-3 ">2004</time>
-            <div className="text-lg font-black pb-1 pt-2">Residential Development</div>
+            <div className="text-lg font-black pb-1 pt-2">
+              Residential Development
+            </div>
             The disconnect between residents desires to protect the Hill and the
-            City of Yellowknife&apos;s development agendas continued. In 2004, City
-            Council&apos;s vote in favor of residential development on Tin Can Hill
-            sparked ongoing debates.
+            City of Yellowknife&apos;s development agendas continued. In 2004,
+            City Council&apos;s vote in favor of residential development on Tin
+            Can Hill sparked ongoing debates.
           </div>
           <hr />
         </li>
@@ -237,10 +240,11 @@ export default function History() {
             <div className="text-lg font-black pb-1 pt-2">
               Rezoning Success and Designations
             </div>
-            In January 2012, Tin Can Hill was successfully rezoned from &quot;Growth Management&quot; to &quot;Parks and Recreation&quot; by a pro-preservation City
-            Council. It was also designated as an &quot;off-leash dog park,&quot; and
-            received some park-like amenities, including trash cans and a
-            boardwalk.
+            In January 2012, Tin Can Hill was successfully rezoned from
+            &quot;Growth Management&quot; to &quot;Parks and Recreation&quot; by
+            a pro-preservation City Council. It was also designated as an
+            &quot;off-leash dog park,&quot; and received some park-like
+            amenities, including trash cans and a boardwalk.
           </div>
           <hr />
         </li>
@@ -260,7 +264,9 @@ export default function History() {
           </div>
           <div className="timeline-end mb-10">
             <time className="font-mono pb-3">2022</time>
-            <div className="text-lg font-black pb-1 pt-2">Aurora College Proposal</div>
+            <div className="text-lg font-black pb-1 pt-2">
+              Aurora College Proposal
+            </div>
             In 2022, a proposal for a polytechnical university campus and
             residence reignited the development controversy. The Government of
             the Northwest Territories chose Tin Can Hill as the location for
@@ -295,8 +301,8 @@ export default function History() {
             territorial election, with most Yellowknife candidates opposing
             development of a University campus on the Hill. The TCHCC continues
             its efforts to raise awareness of the Hill&apos;s key services to
-            Yellowknife&apos;s, and works to obtain permanent protection of the Hill
-            as a Territorial Park.
+            Yellowknife&apos;s, and works to obtain permanent protection of the
+            Hill as a Territorial Park.
           </div>
         </li>
       </ul>

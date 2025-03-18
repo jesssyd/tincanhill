@@ -1,5 +1,4 @@
 import Banner from "../ui/banner";
-
 import Product from "../ui/product";
 
 export default function Shop() {
@@ -47,7 +46,7 @@ export default function Shop() {
         <h3>Unisex T-Shirts</h3>
         <div className="flex gap-6 mb-10">
           <Product
-            title='"Keep it Wild" T-Shirt'
+            title="&quot;Keep it Wild&quot; T-Shirt"
             src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
             text={"Available in S-5XL. Black only."}
             price="$35"
@@ -56,7 +55,7 @@ export default function Shop() {
         <h3>Unisex Hoodies</h3>
         <div className="flex gap-6 mb-10">
           <Product
-            title='"Keep it Wild" Hoodie - Heather Navy'
+            title="&quot;Keep it Wild&quot; Hoodie - Heather Navy"
             src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
             text={
               "Available in S-5XL. Also available in Athletic Heather and Black."
@@ -64,7 +63,7 @@ export default function Shop() {
             price="$65"
           ></Product>
           <Product
-            title='"Keep it Wild" Hoodie - Athletic Heather (Grey)'
+            title="&quot;Keep it Wild&quot; Hoodie - Athletic Heather (Grey)"
             src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
             text={
               "Available in S-5XL. Also available in Heather Navy and Black."
@@ -72,7 +71,7 @@ export default function Shop() {
             price="$65"
           ></Product>
           <Product
-            title='"Keep it Wild" Hoodie - Black'
+            title="&quot;Keep it Wild&quot; Hoodie - Black"
             src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
             text={
               "Available in S-5XL. Also available in Heather Navy and Athletic Heather."
@@ -80,18 +79,18 @@ export default function Shop() {
             price="$65"
           ></Product>
         </div>
-        <h3>"Keep it Wild" Stickers and Pins</h3>
+        <h3>&quot;Keep it Wild&quot; Stickers and Pins</h3>
         <div className="flex gap-6 mb-10">
           <Product
-            title='"Keep it Wild" Pin'
+            title="&quot;Keep it Wild&quot; Pin"
             src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-            text={'Approx. 2" diameter'}
+            text={"Approx. 2&quot; diameter"}
             price="$3"
           ></Product>
           <Product
-            title='"Keep it Wild" Sticker'
+            title="&quot;Keep it Wild&quot; Sticker"
             src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-            text={'Approx. 2" diameter'}
+            text={"Approx. 2&quot; diameter"}
             price="$3"
           ></Product>
         </div>

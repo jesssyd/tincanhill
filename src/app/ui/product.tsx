@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 interface ProdProps {
   title: string;
   text: string;
@@ -9,7 +11,13 @@ export default function Product({ title, text, price, src }: ProdProps) {
   return (
     <div className="card bg-base-100 w-96 shadow-sm">
       <figure>
-        <img src={src} alt={title} />
+        <Image
+          src={src}
+          alt={title}
+          width={1000}
+          height={1000}
+          className="max-w-[200px] sm:max-w-1/3 h-auto rounded-md object-cover"
+        ></Image>
       </figure>
       <div className="card-body">
         <h2 className="card-title">{title}</h2>
