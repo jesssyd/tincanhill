@@ -1,6 +1,7 @@
 import History from "./history";
 import Banner from "../ui/banner";
 import Image from "next/image";
+import Form from "../ui/form";
 
 export default function About() {
   return (
@@ -13,10 +14,10 @@ export default function About() {
       />
       <section className="md:grid md:grid-cols-12 gap-6 mb-12 flex flex-col-reverse">
         {/* className="flex flex-col-reverse sm:flex-row gap-6" */}
-        <div className="col-start-2 col-end-8 flex flex-col-reverse md:flex-row gap-6 self-center">
+        <div className="col-start-2 col-end-8 flex flex-col-reverse md:flex-row gap-6">
           <div className="flex flex-col gap-6">
             <div>
-              <h2 className="">The Tin Can Hill Committee</h2>
+              <h2 className="md:text-nowrap">The Tin Can Hill Committee</h2>
               <h3>Who We Are</h3>
               <p>
                 We are a team of people based out of the NWT who love Tin Can
@@ -34,10 +35,9 @@ export default function About() {
                 Yellowknifers and visitors.
               </p>
             </div>
-  
           </div>
         </div>
-        <div className="col-start-9 col-end-12">
+        <div className="col-start-9 col-end-12 flex items-center">
           <Image
             src={
               "https://scontent-yyz1-1.xx.fbcdn.net/v/t39.30808-6/460186376_2558399927677449_9146310337073085807_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=111&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=H0CtPMH4GxYQ7kNvgHnFtEp&_nc_zt=23&_nc_ht=scontent-yyz1-1.xx&_nc_gid=AolL5bjDsYzPzygfbd1Z9_L&oh=00_AYHz7kxa32eylDx19lTt6RH957I3d7fLn4f9owJOg3F1kQ&oe=67D5565D"
@@ -49,12 +49,75 @@ export default function About() {
           />
         </div>
       </section>
+      <section className="bg-base-200 grid grid-cols-12 gap-6 py-20 px-8">
+        <div className="col-span-full sm:col-start-2 sm:col-end-12">
+          <h2 className="text-4xl font-bold">Why Tin Can Hill?</h2>
+          <div className="flex justify-between flex-row flex-wrap md:gap-8 gap-3">
+            <div className="card h-60 sm:h-auto min-w-48 bg-base-100 image-full flex-1 flex-wrap basis-0 shadow-sm">
+              <figure>
+                <Image
+                  src="/assets/about/about1.webp"
+                  height={1000}
+                  width={1000}
+                  alt="trails"
+                  className="object-cover"
+                />
+              </figure>
+              <div className="card-body">
+                <h3 className="flex items-center gap-2">Beautiful Trails</h3>
+                <p>
+                  Tin Can Hill has beauiful trails for Yellowknifers and
+                  visitors to explore.
+                </p>
+              </div>
+            </div>
+            <div className="h-60 sm:h-auto min-w-48 card bg-base-100 image-full flex-1 basis-0 flex-wrap shadow-sm">
+              <figure>
+                <Image
+                  src="/assets/about/about2.jpg"
+                  height={1000}
+                  width={1000}
+                  alt="trails"
+                  className="object-cover"
+                />
+              </figure>
+              <div className="card-body">
+                <h3 className="flex items-center gap-2">Vibrant History</h3>
+                <p>
+                  Tin Can Hill has a long and vibrant history and it should
+                  continue to be enjoyed for generations to come.
+                </p>
+              </div>
+            </div>
+            <div className="card h-60 sm:h-auto min-w-48 bg-base-100 image-full flex-1 basis-0 flex-wrap shadow-sm">
+              <figure>
+                <Image
+                  src="/assets/about/about3.webp"
+                  height={1000}
+                  width={1000}
+                  alt="trails"
+                  className="object-cover"
+                />
+              </figure>
+              <div className="card-body">
+                <h3 className="flex items-center gap-2">Public Green Space</h3>
+                <p>
+                  Tin Can Hill is a beloved green space enjoyed by individuals
+                  and families across Yellowknife and the NWT.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <History />
+      <Form />
     </main>
   );
 }
 
-{/* <div>
+{
+  /* <div>
               <h3>Why Tin Can Hill?</h3>
               <p>
                 Recreational users of Tin Can Hill are at risk of losing
@@ -66,4 +129,5 @@ export default function About() {
                 from <span className="italic">any</span> development,
                 business, residential or otherwise. 
               </p>
-            </div> */}
+            </div> */
+}

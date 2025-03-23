@@ -15,7 +15,7 @@ export default function Support() {
         <div className="flex flex-col items-stretch gap-6 col-span-full sm:col-start-1 sm:col-span-full lg:col-start-3 lg:col-span-8  2xl:col-start-4 2xl:col-span-6">
           <h2 className="pb-0">How You Can Help</h2>
           <div className="flex flex-col sm:flex-row sm:h-60">
-            <h3 className="sm:min-w-1/3 sm:p-5 py-1 px-3 h-full bg-base-300 sm:h-auto rounded-sm rounded-b-none sm:rounded-r-none sm:rounded-bl-sm">
+            <h3 className="sm:min-w-1/3 sm:p-5 py-1 px-3 h-full bg-base-300  sm:h-auto rounded-sm rounded-b-none sm:rounded-r-none sm:rounded-bl-sm">
               Sign the Petition
             </h3>
             <div className="flex flex-col justify-between rounded-sm rounded-t-none sm:rounded-l-none sm:rounded-tr-sm p-3 sm:p-5 h-fit sm:h-full bg-base-200">
@@ -28,12 +28,13 @@ export default function Support() {
               <Button
                 href="https://www.change.org/p/protect-tin-can-hill-recreation-area-from-development-in-yellowknife"
                 text="Sign Now!"
-                className="btn-neutral w-fit self-end"
+                className="btn-info w-fit self-end"
+                target="_blank"
               ></Button>
             </div>
           </div>
           <div className="flex flex-col sm:flex-row sm:h-60">
-            <h3 className="sm:min-w-1/3 sm:p-5 py-1 px-3 h-full bg-base-300 sm:h-auto rounded-sm rounded-b-none sm:rounded-r-none sm:rounded-bl-sm">
+            <h3 className="sm:min-w-1/3 sm:p-5 py-1 px-3 h-full bg-base-300  sm:h-auto rounded-sm rounded-b-none sm:rounded-r-none sm:rounded-bl-sm">
               Grab Some Merch
             </h3>
             <div className="flex flex-col justify-between rounded-sm rounded-t-none sm:rounded-l-none sm:rounded-tr-sm p-3 sm:p-5 h-fit sm:h-full bg-base-200">
@@ -45,12 +46,12 @@ export default function Support() {
               <Button
                 href="/shop"
                 text="Shop Here"
-                className="btn-neutral w-fit self-end"
+                className="btn-info w-fit self-end"
               ></Button>
             </div>
           </div>
           <div className="flex flex-col sm:flex-row sm:h-60">
-            <h3 className="sm:min-w-1/3 sm:p-5 py-1 px-3 h-full bg-base-300 sm:h-auto rounded-sm rounded-b-none sm:rounded-r-none sm:rounded-bl-sm">
+            <h3 className="sm:min-w-1/3 sm:p-5 py-1 px-3 h-full bg-base-300  sm:h-auto rounded-sm rounded-b-none sm:rounded-r-none sm:rounded-bl-sm">
               Join Our Facebook Group
             </h3>
             <div className="flex flex-col justify-between rounded-sm rounded-t-none sm:rounded-l-none sm:rounded-tr-sm p-3 sm:p-5 h-fit sm:h-full bg-base-200">
@@ -62,28 +63,29 @@ export default function Support() {
               <Button
                 href="https://www.facebook.com/groups/tincanhill"
                 text="Join Today"
-                className="btn-neutral w-fit self-end"
+                className="btn-info w-fit self-end"
+                target="_blank"
               ></Button>
             </div>
           </div>
           <div className="flex flex-col sm:flex-row sm:h-60">
-            <h3 className="sm:min-w-1/3 sm:p-5 py-1 px-3 h-full bg-base-300 sm:h-auto rounded-sm rounded-b-none sm:rounded-r-none sm:rounded-bl-sm">
+            <h3 className="sm:min-w-1/3 sm:p-5 py-1 px-3 h-full bg-base-300  sm:h-auto rounded-sm rounded-b-none sm:rounded-r-none sm:rounded-bl-sm">
               Join our Mailing List
             </h3>
             <div className="flex flex-col justify-between rounded-sm rounded-t-none sm:rounded-l-none sm:rounded-tr-sm p-3 sm:p-5 h-fit sm:h-full bg-base-200">
               <p className="lg:max-w-5/6">
                 Keep up to date with the latest news on Tin Can Hill, TCHCC
-                events, and so much more, curated by our very own Vicky Johnson.
+                events, and so much more, curated by our very own Vicky Johnston.
               </p>
               <Button
-                href="/"
+                href="#support-form"
                 text="Sign Up"
-                className="btn-neutral w-fit self-end"
+                className="btn-info w-fit self-end"
               ></Button>
             </div>
           </div>
           <div className="flex flex-col sm:flex-row sm:h-60">
-            <h3 className="sm:min-w-1/3 sm:p-5 py-1 px-3 h-full bg-base-300 sm:h-auto rounded-sm rounded-b-none sm:rounded-r-none sm:rounded-bl-sm">
+            <h3 className="sm:min-w-1/3 sm:p-5 py-1 px-3 h-full bg-base-300  sm:h-auto rounded-sm rounded-b-none sm:rounded-r-none sm:rounded-bl-sm">
               Join the Team!
             </h3>
             <div className="flex flex-col justify-between rounded-sm rounded-t-none sm:rounded-l-none sm:rounded-tr-sm p-3 sm:p-5 h-fit sm:h-full bg-base-200">
@@ -93,14 +95,15 @@ export default function Support() {
                 learn more and join our team.
               </p>
               <Button
-                href="/"
+                href="#support-form"
                 text="Contact Us"
-                className="btn-neutral w-fit self-end"
+                className="btn-info w-fit self-end"
               ></Button>
             </div>
           </div>
         </div>
       </section>
+      <Form id="support-form"></Form>
     </main>
   );
 }

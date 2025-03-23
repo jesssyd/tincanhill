@@ -1,4 +1,4 @@
-// 'use client';
+"use client";
 import Image from "next/image";
 import Button from "./button";
 import clsx from "clsx";
@@ -27,8 +27,11 @@ export default function Product({
     >
       <button
         type="button"
-        onClick={() => document.getElementById(title).showModal()}
+        onClick={() =>
+          (document.getElementById(title) as HTMLDialogElement)?.showModal()
+        }
         className="cursor-zoom-in"
+        aria-label="Product Image"
       >
         <Image
           src={src}
@@ -36,11 +39,17 @@ export default function Product({
           width={1000}
           height={1000}
           className="h-auto rounded-md object-cover"
-        ></Image>
+        />
       </button>
       <dialog id={title} className="modal">
         <div className="modal-box">
-          <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2" onClick={() => document.getElementById(title).close()}>
+          <button
+            aria-label="Product Image"
+            className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
+            onClick={() =>
+              (document.getElementById(title) as HTMLDialogElement)?.close()
+            }
+          >
             ✕
           </button>
           <Image

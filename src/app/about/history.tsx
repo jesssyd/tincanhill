@@ -4,16 +4,14 @@ export default function History() {
   return (
     <section className="md:grid md:grid-cols-12 gap-6 max-w-3xl rounded-2xl">
       <div className="col-start-2 col-end-12">
-      <div className="divider mt-0"></div>
         <div className="pb-5 max-w-lg">
           <h2 className="">Tin Can Hill Throughout History...</h2>
           <p>
             Tin Can Hill and Yellowknife have a very long and vibrant history.
             Click on the link below to read the full history.
           </p>
-          <Button href="" text="Read Here" className="btn-primary" />
+          <Button href="https://drive.google.com/file/d/1EL5rUZ6xAXShNla2t58HjrkZCDcMhf9Q/view?usp=drivesdk" text="Read Here" className="btn-neutral" target="_blank" />
         </div>
-        <div className="divider mt-0"></div>
         <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical pt-5">
           <li>
             <div className="timeline-middle">

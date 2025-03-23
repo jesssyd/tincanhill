@@ -2,16 +2,15 @@ import Image from "next/image";
 
 export default function Carousel() {
   return (
-    <section className="grid grid-cols-12 gap-6 ">
-      <div className="carousel col-span-full sm:col-start-2 sm:col-end-12">
-        <div id="slide1" className="carousel-item relative w-full">
+    <section className="grid grid-cols-12 gap-6">
+      <div className="carousel col-span-full sm:col-start-2 sm:col-end-12 lg:col-start-3 lg:col-span-8">
+        <div id="slide1" className="carousel-item relative w-full h-auto">
           <Image
             src="/assets/gallery1.jpg"
             alt="Title"
             width={1000}
             height={1000}
-            className="w-full object-contain"
-            style={{ height: 'auto' }}
+            className="w-full object-contain h-auto"
           ></Image>
           <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
             <a href="#slide4" className="btn btn-circle">

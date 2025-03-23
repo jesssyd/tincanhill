@@ -4,13 +4,15 @@ export interface ButtonProps {
   href: string;
   text: string;
   className?: string;
+  target?: string;
 }
 
-export default function Button({ href, text, className }: ButtonProps) {
+export default function Button({ href, text, className, target }: ButtonProps) {
   return (
     <a
       className= {clsx("btn", className)}
       href={href}
+      target={target}
     >
       {text}
     </a>

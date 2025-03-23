@@ -29,13 +29,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" data-theme="tin-can-hill">
-      <link rel="icon" type="image/x-icon" href="public/favicon.png" />
+      <link rel="icon" type="image/png" href="/favicon.png" />
       <body
         className={`${englebert.variable} ${architectsDaughter.variable} antialiased`}
       >
         <Navbar />
-        {/* flex-grow p-6 md:overflow-y-auto md:p-12 */}
-       
+      
         {children}
        
         <Foot />

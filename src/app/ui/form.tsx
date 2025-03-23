@@ -1,6 +1,9 @@
-export default function Form() {
+interface FormProps {
+  id?: string,
+}
+export default function Form({id}: FormProps ) {
   return (
-    <section className="mb-0 py-20 bg-base-200 lg:grid lg:grid-cols-12 lg:gap-6">
+    <section id={id} className="mb-0 py-20 bg-base-200 lg:grid lg:grid-cols-12 lg:gap-6">
         <div className="col-start-2 col-end-12 flex items-center justify-center flex-col lg:flex-row-reverse gap-6">
           <div className="text-center lg:text-left">
             <h1 className="text-4xl font-bold">Join Us!</h1>

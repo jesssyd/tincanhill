@@ -10,9 +10,9 @@ export default function CardLayout() {
           <Card
             title="Join the Newsletter"
             buttonProps={{
-              href: "/support",
+              href:"/support#support-form",
               text: "Sign Up",
-              className: "btn-primary",
+              className: "btn-accent",
             }}
           />
           <Card
@@ -20,7 +20,8 @@ export default function CardLayout() {
             buttonProps={{
               href: "https://www.facebook.com/groups/tincanhill",
               text: "Join Now",
-              className: "btn-primary",
+              className: "btn-accent",
+              target:"_blank",
             }}
           />
           <Card
@@ -28,7 +29,8 @@ export default function CardLayout() {
             buttonProps={{
               href: "https://www.change.org/p/protect-tin-can-hill-recreation-area-from-development-in-yellowknife",
               text: "Sign Here",
-              className: "btn-primary",
+              className: "btn-accent",
+              target:"_blank",
             }}
           />
           <Card
@@ -36,7 +38,7 @@ export default function CardLayout() {
             buttonProps={{
               href: "/shop",
               text: "Buy Now",
-              className: "btn-primary",
+              className: "btn-accent",
             }}
           />
         </div>
