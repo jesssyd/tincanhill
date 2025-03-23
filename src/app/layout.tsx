@@ -29,7 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" data-theme="tin-can-hill">
-      
+      <link rel="icon" type="image/x-icon" href="public/favicon.png" />
       <body
         className={`${englebert.variable} ${architectsDaughter.variable} antialiased`}
       >

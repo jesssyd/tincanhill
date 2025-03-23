@@ -17,7 +17,7 @@ export default function Card({ title,  buttonProps }: CardProps) {
           <Button
             href={buttonProps.href}
             text={buttonProps.text}
-            className={clsx(buttonProps.className, "w-full text-nowrap btn-sm md:btn-md lg:btn-lg xl:btn-xl")}
+            className={clsx(buttonProps.className, "w-full text-nowrap max-w-full btn-sm lg:btn-md xl:btn-l")}
           />
         </div>
       </div>
