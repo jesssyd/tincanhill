@@ -100,4 +100,33 @@
   .grid-template {
     @apply grid grid-cols-12 gap-6 px-8 
   }
+
+  .slick-prev,
+  .slick-next {
+    @apply lg:h-6 md:h-5 h-2;
+    @apply -translate-y-[50%];
+  }
+
+  .slick-next {
+    @apply lg:-right-9! md:-right-6! hidden;
+  }
+
+  .slick-prev {
+    @apply lg:-left-9! md:-left-6! hidden;
+  }
+
+  .slick-prev:before,
+  .slick-next:before {
+    @apply hidden;
+  }
+
+  .slick-slide {
+    @apply overflow-hidden;
+    @apply max-w-full;
+  }
+
+  .slick-track {
+    @apply flex;
+    @apply overflow-hidden;
+  }
 }

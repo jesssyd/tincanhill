@@ -8,7 +8,7 @@ export default function Media() {
 
       <div className="col-start-2 col-end-5 pb-3 md:pb-0">
         <Image
-          src="https://scontent-yyz1-1.xx.fbcdn.net/v/t39.30808-6/460186376_2558399927677449_9146310337073085807_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=111&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=H0CtPMH4GxYQ7kNvgHnFtEp&_nc_zt=23&_nc_ht=scontent-yyz1-1.xx&_nc_gid=AolL5bjDsYzPzygfbd1Z9_L&oh=00_AYHz7kxa32eylDx19lTt6RH957I3d7fLn4f9owJOg3F1kQ&oe=67D5565D"
+          src="/assets/tchlogo.png"
           alt="Tin Can Hill"
           width={1000}
           height={1000}

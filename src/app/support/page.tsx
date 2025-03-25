@@ -7,7 +7,7 @@ export default function Support() {
     <main>
       <Banner
         title="Support"
-        body="We appreciate any contribution to our cause, no matter how big or small."
+        body="We appreciate any contribution to the cause, no matter how big or small."
         className="bg-primary text-primary-content"
       />
 
@@ -39,9 +39,9 @@ export default function Support() {
             </h3>
             <div className="flex flex-col justify-between rounded-sm rounded-t-none sm:rounded-l-none sm:rounded-tr-sm p-3 sm:p-5 h-fit sm:h-full bg-base-200">
               <p className="lg:max-w-5/6">
-                Support local artists and businesses while contributing to
-                operational materials for the TCHCC that support promoting the
-                long term protection of the Hill.
+                Check out our locally designed and made swag. All proceeds
+                contribute to educational materials and TCHCC activities
+                including promoting the long term protection of the Hill.
               </p>
               <Button
                 href="/shop"
@@ -56,9 +56,8 @@ export default function Support() {
             </h3>
             <div className="flex flex-col justify-between rounded-sm rounded-t-none sm:rounded-l-none sm:rounded-tr-sm p-3 sm:p-5 h-fit sm:h-full bg-base-200">
               <p className="lg:max-w-5/6">
-                Join our Facebook to view the latest updates on news impacting
-                the future of Tin Can Hill. Whether you post or are just here to
-                listen, your presence is important!
+                Join our Facebook group to view the latest news and to share
+                your adventures on the hill!
               </p>
               <Button
                 href="https://www.facebook.com/groups/tincanhill"
@@ -75,7 +74,8 @@ export default function Support() {
             <div className="flex flex-col justify-between rounded-sm rounded-t-none sm:rounded-l-none sm:rounded-tr-sm p-3 sm:p-5 h-fit sm:h-full bg-base-200">
               <p className="lg:max-w-5/6">
                 Keep up to date with the latest news on Tin Can Hill, TCHCC
-                events, and so much more, curated by our very own Vicky Johnston.
+                events, and so much more, curated by our very own Vicky
+                Johnston.
               </p>
               <Button
                 href="#support-form"

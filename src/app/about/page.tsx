@@ -40,7 +40,7 @@ export default function About() {
         <div className="col-start-9 col-end-12 flex items-center">
           <Image
             src={
-              "https://scontent-yyz1-1.xx.fbcdn.net/v/t39.30808-6/460186376_2558399927677449_9146310337073085807_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=111&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=H0CtPMH4GxYQ7kNvgHnFtEp&_nc_zt=23&_nc_ht=scontent-yyz1-1.xx&_nc_gid=AolL5bjDsYzPzygfbd1Z9_L&oh=00_AYHz7kxa32eylDx19lTt6RH957I3d7fLn4f9owJOg3F1kQ&oe=67D5565D"
+              "/assets/tchabout.webp"
             }
             alt={"Tin Can Hill Image"}
             width={1000}
@@ -84,7 +84,7 @@ export default function About() {
               <div className="card-body">
                 <h3 className="flex items-center gap-2">Vibrant History</h3>
                 <p>
-                  Tin Can Hill has a long and vibrant history and it should
+                  Tin Can Hill has a long and vibrant history and it will
                   continue to be enjoyed for generations to come.
                 </p>
               </div>
@@ -103,7 +103,7 @@ export default function About() {
                 <h3 className="flex items-center gap-2">Public Green Space</h3>
                 <p>
                   Tin Can Hill is a beloved green space enjoyed by individuals
-                  and families across Yellowknife and the NWT.
+                  and families across Yellowknife, NWT.
                 </p>
               </div>
             </div>
