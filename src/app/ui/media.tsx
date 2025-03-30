@@ -17,9 +17,9 @@ export default function Media() {
       </div>
       {/* max-w-[200px] sm:max-w-1/3 */}
       <div className="col-start-6 col-end-12 self-center  sm:max-w-2/3 md:max-w-none">
-        <h2 className="text-4xl font-bold">The Tin Can Hill Committee</h2>
+        <h2 className="text-4xl font-bold">The Tin Can Hill Conservation Committee</h2>
         <p className="text-lg text-gray-600">
-          Founded in 2023, the Tin Can Hill Committee (TCHCC) is a group of dedicated
+          Founded in 2023, the Tin Can Hill Conservation Committee (TCHCC) is a group of dedicated
           members from across the NWT who are seeking permanent protection for
           Tin Can Hill.
         </p>
