@@ -1,15 +1,15 @@
-import History from "./history";
 import Banner from "../ui/banner";
 import Image from "next/image";
 import Form from "../ui/form";
+import Link from "next/link";
+import Carousel from "../ui/carousel";
 
 export default function About() {
   return (
     <main className="mx-auto">
       <Banner
         title="About Us"
-        body="Learn about who we are, what our mission is and the history of Tin
-              Can Hill."
+        body="Learn about who we are and what our mission is."
         className="bg-primary text-primary-content"
       />
       <section className="md:grid md:grid-cols-12 gap-6 mb-12 flex flex-col-reverse">
@@ -17,7 +17,9 @@ export default function About() {
         <div className="col-start-2 col-end-8 flex flex-col-reverse md:flex-row gap-6">
           <div className="flex flex-col gap-6">
             <div>
-              <h2 className="md:text-nowrap">The Tin Can Hill Conservation Committee</h2>
+              <h2 className="md:text-nowrap">
+                The Tin Can Hill Conservation Committee
+              </h2>
               <h3>Who We Are</h3>
               <p>
                 We are a team of people based out of the NWT who love Tin Can
@@ -39,9 +41,7 @@ export default function About() {
         </div>
         <div className="col-start-9 col-end-12 flex items-center">
           <Image
-            src={
-              "/assets/tchabout.webp"
-            }
+            src={"/assets/tchabout.webp"}
             alt={"Tin Can Hill Image"}
             width={1000}
             height={1000}
@@ -64,11 +64,13 @@ export default function About() {
                 />
               </figure>
               <div className="card-body">
+                <Link target="_blank" href={"https://www.alltrails.com/trail/canada/northwest-territories/tin-can-hill-loop"}> 
                 <h3 className="flex items-center gap-2">Beautiful Trails</h3>
                 <p>
-                  Tin Can Hill has beauiful trails for Yellowknifers and
-                  visitors to explore.
+                  Tin Can Hill has beauiful trails overlooking the shores of
+                  Great Slave Lake for Yellowknifers and visitors to explore.
                 </p>
+                </Link>
               </div>
             </div>
             <div className="h-60 sm:h-auto min-w-48 card bg-base-100 image-full flex-1 basis-0 flex-wrap shadow-sm">
@@ -82,11 +84,13 @@ export default function About() {
                 />
               </figure>
               <div className="card-body">
+                <Link href={"/history"}>
                 <h3 className="flex items-center gap-2">Vibrant History</h3>
                 <p>
                   Tin Can Hill has a long and vibrant history and it will
                   continue to be enjoyed for generations to come.
                 </p>
+                </Link>
               </div>
             </div>
             <div className="card h-60 sm:h-auto min-w-48 bg-base-100 image-full flex-1 basis-0 flex-wrap shadow-sm">
@@ -110,7 +114,7 @@ export default function About() {
           </div>
         </div>
       </section>
-      <History />
+      <Carousel />
       <Form />
     </main>
   );

@@ -1,8 +1,11 @@
-import Button from "../ui/button";
+import Button from "./button";
 
-export default function History() {
+export default function Timeline() {
   return (
-    <section className="md:grid md:grid-cols-12 gap-6 max-w-3xl rounded-2xl">
+    <section
+      id="history"
+      className="md:grid md:grid-cols-12 gap-6 max-w-3xl rounded-2xl"
+    >
       <div className="col-start-2 col-end-12">
         <div className="pb-5 max-w-lg">
           <h2 className="">Tin Can Hill Throughout History...</h2>
@@ -10,7 +13,12 @@ export default function History() {
             Tin Can Hill and Yellowknife have a very long and vibrant history.
             Click on the link below to read the full history.
           </p>
-          <Button href="https://drive.google.com/file/d/1EL5rUZ6xAXShNla2t58HjrkZCDcMhf9Q/view?usp=drivesdk" text="Read Here" className="btn-neutral" target="_blank" />
+          <Button
+            href="https://drive.google.com/file/d/1EL5rUZ6xAXShNla2t58HjrkZCDcMhf9Q/view?usp=drivesdk"
+            text="Read Here"
+            className="btn-neutral"
+            target="_blank"
+          />
         </div>
         <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical pt-5">
           <li>
@@ -27,7 +35,9 @@ export default function History() {
               </svg>
             </div>
             <div className="timeline-start mb-10 md:text-end">
-              <time className="font-mono text-info-content">10 000 Years Ago</time>
+              <time className="font-mono text-info-content">
+                10 000 Years Ago
+              </time>
               <div className="text-lg font-black pb-1 pt-2">
                 The First People of Yellowknife
               </div>
@@ -88,9 +98,12 @@ export default function History() {
               <div className="text-lg font-black pb-1 pt-2">
                 Conservation and Cleanup Efforts
               </div>
-              Early conservation efforts, such as the Ecology North cleanup in
-              1971, aimed to preserve Tin Can Hill. The &quot;Ajax&quot; project
-              addressed historical garbage deposits, emphasizing environmental
+              Early conservation efforts tried to reverse some of the damage
+              caused by legacy exploration and development, such as the Ecology
+              North cleanup in 1971. For example, Ecology North&apos;s 1971
+              &quot;Ajax&quot; project was a large scale cleanup of old garbage
+              dumps from the mining era. Efforts like this set the stage for a
+              new perception of the Hill as an area deserving of environmental
               stewardship.
             </div>
             <hr />
@@ -114,9 +127,10 @@ export default function History() {
               <div className="text-lg font-black pb-1 pt-2">
                 City Residential and Mine Exploration Proposals
               </div>
-              Between 1985 and 1989, the City proposed residential development
-              on Tin Can Hill. Citizen opposition convinced the City to drop its
-              development plans and preserved the Hill as green space
+              City Residential and Mine Exploration Proposals Between 1985 and
+              1989, the City proposed residential development on Tin Can Hill.
+              Citizen opposition convinced the City to drop its development
+              plans and the Hill remained an undeveloped green space.
             </div>
             <hr />
           </li>
@@ -139,8 +153,8 @@ export default function History() {
               <div className="text-lg font-black pb-1 pt-2">
                 Tin Can Hill in the 21st Century
               </div>
-              There was low level development on the Hill, including the
-              construction of the CBC Radio tower and exploration activities.
+              There was little development on the Hill. The CBC Radio tower was
+              constructed during this period.
             </div>
             <hr />
           </li>

@@ -48,7 +48,7 @@ export default function Form({ id }: FormProps) {
         <div className="text-center lg:text-left">
           <h1 className="text-4xl font-bold">Join Us!</h1>
           <p className="pb-6 max-w-md">
-            If you would you like to be apart of our team&apos;s protection efforts or if you&apos;d just like to be added to our distribution list sign up now!
+            If you would you like to be a part of our team&apos;s protection efforts or if you&apos;d just like to be added to our distribution list sign up now!
           </p>
         </div>
 
