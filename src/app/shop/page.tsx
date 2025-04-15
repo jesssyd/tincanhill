@@ -70,8 +70,15 @@ export default function Shop() {
             <Product
               title='"Keep it Wild" Sticker'
               src="/assets/merch/sticker.png"
-              text={"Approx. 2 inch diameter"}
+              text={"Approx. 2 inch wide"}
               price="$3"
+              className="sm:col-span-1 col-start-auto"
+            ></Product>
+            <Product
+              title='"Tin Can Hill Yellowknife" Bumper Sticker'
+              src="/assets/merch/bumper-sticker.png"
+              text={"Approx. 6x6 inches"}
+              price="$5"
               className="sm:col-span-1 col-start-auto"
             ></Product>
           </div>

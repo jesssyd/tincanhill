@@ -319,8 +319,9 @@ export default function Timeline() {
               territorial election, with most Yellowknife candidates opposing
               development of a University campus on the Hill. The TCHCC
               continues its efforts to raise awareness of the Hill&apos;s key
-              services to Yellowknife&apos;s, and works to obtain permanent
-              protection of the Hill as a Territorial Park.
+              services to Yellowknife, and works to obtain permanent
+              protection of the Hill, through more stringent city zoning, and,
+              eventually, as a Territorial Park.
             </div>
           </li>
         </ul>

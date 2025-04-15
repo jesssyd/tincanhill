@@ -9,13 +9,28 @@ export default function Events() {
         className="bg-primary text-primary-content"
       />
 
-      <section className="grid grid-cols-12 gap-6 mb-12 h-[30vh]">
-        <div className="col-span-full sm:col-start-1 sm:col-end-12 md:col-start-3 md:col-span-8 lg:col-start-4 lg:col-span-6">
-          <h2 className="text-center">Coming Soon...</h2>
+      <section className="mb-12">
+        <div className="flex flex-col items-center">
+          <div className="w-full max-w-[800px]">
+            <h2 className="text-left">
+              Upcoming Events
+            </h2>
+
+            <div className="relative w-full pt-[75%]">
+              {" "}
+              {/* 4:3 aspect ratio */}
+              <iframe
+                src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FEdmonton&showPrint=0&showNav=0&mode=AGENDA&showTz=0&title=TCHCC%20Events&src=dGluY2FuaGlsbHllbGxvd2tuaWZlQGdtYWlsLmNvbQ&color=%23039BE5"
+                className="absolute top-0 left-0 w-full h-full"
+                frameBorder="0"
+                scrolling="no"
+                title="TCHCC Events"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
         </div>
       </section>
-
-
     </main>
   );
 }

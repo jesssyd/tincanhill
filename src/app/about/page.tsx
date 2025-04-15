@@ -17,7 +17,7 @@ export default function About() {
         <div className="col-start-2 col-end-8 flex flex-col-reverse md:flex-row gap-6">
           <div className="flex flex-col gap-6">
             <div>
-              <h2 className="md:text-nowrap">
+              <h2 className="">
                 The Tin Can Hill Conservation Committee
               </h2>
               <h3>Who We Are</h3>
