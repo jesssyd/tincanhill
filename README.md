@@ -10,4 +10,4 @@ This project uses Next and Daisy UI (Tailwind CSS).
 
 ## Learn More
 
-Check out the site @ www.tincanhillyellowkniffe.ca to learn more about Tin Can Hill and the TCHCC's conservation efforts!
+Check out the site @ www.tincanhillyellowknife.ca to learn more about Tin Can Hill and the TCHCC's conservation efforts!
