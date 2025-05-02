@@ -4,7 +4,12 @@ import Form from "../ui/form";
 import Link from "next/link";
 import Carousel from "../ui/carousel";
 
-export default function About() {
+import { getGalleryImages } from "@/lib/api/getGalleryImages";
+export const revalidate = 60;
+
+export default async function About() {
+  const images = await getGalleryImages();
+  console.log(images);
   return (
     <main className="mx-auto">
       <Banner
@@ -114,7 +119,7 @@ export default function About() {
           </div>
         </div>
       </section>
-      <Carousel />
+      <Carousel images={images}/>
       <Form />
     </main>
   );

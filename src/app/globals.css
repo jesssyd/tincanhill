@@ -70,7 +70,7 @@
     @apply pb-3;
   }
 
-  p, span, div, li {
+  p, span, div, li, a {
     @apply font-[Architects_Daughter];
   }
   

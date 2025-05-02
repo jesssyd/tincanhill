@@ -1,6 +1,6 @@
 import Button from "./button";
 import Link from "next/link";
-import { navLinks } from "../lib/navigation";
+import { navLinks } from "../../lib/navigation";
 
 export default function Navbar() {
   return (

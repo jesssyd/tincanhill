@@ -1,8 +1,11 @@
-"use client";
 import Banner from "../ui/banner";
-import Product from "../ui/product";
+import Product from "./ui/product";
 
-export default function Shop() {
+import { getProducts } from "@/lib/api/getProducts";
+
+export default async function Shop() {
+  const products = await getProducts();
+
   return (
     <main>
       <Banner
@@ -26,61 +29,16 @@ export default function Shop() {
             Mary Tapsell.
           </p>
           <div className="grid sm:grid-cols-3 gap-6 grid-cols-2">
-            <Product
-              title='"Keep it Wild" T-Shirt'
-              src="/assets/merch/tshirt-black.png"
-              text={"Available in S-5XL. Black only."}
-              price="$35"
-              className="sm:col-span-1 col-start-auto"
-            ></Product>
-            <Product
-              title='"Keep it Wild" Hoodie - Heather Navy'
-              src="/assets/merch/hoodie-blue.png"
-              text={
-                "Available in S-5XL. Also available in Athletic Heather and Black."
-              }
-              price="$65"
-              className="sm:col-span-1 col-start-auto"
-            ></Product>
-            <Product
-              title='"Keep it Wild" Hoodie - Athletic Heather (Grey)'
-              src="/assets/merch/hoodie-grey.png"
-              text={
-                "Available in S-5XL. Also available in Heather Navy and Black."
-              }
-              price="$65"
-              className="sm:col-span-1 col-start-auto"
-            ></Product>
-            <Product
-              title='"Keep it Wild" Hoodie - Black'
-              src="/assets/merch/hoodie-black.png"
-              text={
-                "Available in S-5XL. Also available in Heather Navy and Athletic Heather."
-              }
-              price="$65"
-              className="sm:col-span-1 col-start-auto"
-            ></Product>
-            <Product
-              title='"Keep it Wild" Pin'
-              src="/assets/merch/pin.png"
-              text={"Approx. 2 inch diameter"}
-              price="$3"
-              className=" sm:col-span-1 col-start-auto"
-            ></Product>
-            <Product
-              title='"Keep it Wild" Sticker'
-              src="/assets/merch/sticker.png"
-              text={"Approx. 2 inch wide"}
-              price="$3"
-              className="sm:col-span-1 col-start-auto"
-            ></Product>
-            <Product
-              title='"Tin Can Hill Yellowknife" Bumper Sticker'
-              src="/assets/merch/bumper-sticker.png"
-              text={"Approx. 6x6 inches"}
-              price="$5"
-              className="sm:col-span-1 col-start-auto"
-            ></Product>
+            {products.map((product, index) => (
+              <Product
+                title={product.title}
+                key={index}
+                src={product.imageURL}
+                text={product.description}
+                price={`$${product.price}`}
+                className="sm:col-span-1 col-start-auto"
+              ></Product>
+            ))}
           </div>
         </div>
       </section>

@@ -31,8 +31,10 @@ export default function RootLayout({
     <html lang="en" data-theme="tin-can-hill">
       <link rel="icon" type="image/png" href="/favicon.png" />
       <body
+        
         className={`${englebert.variable} ${architectsDaughter.variable} antialiased`}
       >
+        
         <Navbar />
       
         {children}

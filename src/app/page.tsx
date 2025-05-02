@@ -4,13 +4,18 @@ import CardLayout from "./ui/cardLayout";
 import Carousel from "./ui/carousel";
 import Form from "./ui/form";
 
-export default function Home() {
+import { getGalleryImages } from "../lib/api/getGalleryImages";
+export const revalidate = 60;
+
+export default async function Home() {
+  const images = await getGalleryImages();
+
   return (
     <main>
       <Hero />
       <Media />
-      <CardLayout />
-      <Carousel></Carousel>
+      {/* <CardLayout /> */}
+      <Carousel images={images}></Carousel>
       <Form/>
     </main>
   );

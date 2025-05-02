@@ -1,8 +1,11 @@
-import Timeline from "../ui/timeline";
+import Timeline from "./ui/timeline";
 import Banner from "../ui/banner";
 import Form from "../ui/form";
 
-export default function HistoryPage() {
+import { getTimeline } from "@/lib/api/getTimeline";
+
+export default async function HistoryPage() {
+  const entries = await getTimeline();
   return (
     <main className="mx-auto">
       <Banner
@@ -10,7 +13,7 @@ export default function HistoryPage() {
         body="Learn about the history of Tin Can Hill."
         className="bg-primary text-primary-content"
       />
-      <Timeline/>
+      <Timeline entries={entries}/>
       <Form />
     </main>
   );

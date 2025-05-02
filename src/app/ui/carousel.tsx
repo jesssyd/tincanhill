@@ -4,7 +4,12 @@ import Image from "next/image";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { CarouselImages } from "../lib/carousel";
+
+import { GalleryImage } from "../../lib/api/getGalleryImages";
+
+interface CarouselProps {
+  images: GalleryImage[];
+}
 
 interface ArrowProps {
   className?: string;
@@ -52,7 +57,7 @@ function PrevArrow({ className, onClick }: ArrowProps) {
   );
 }
 
-function Carousel() {
+export default function Carousel({ images }: CarouselProps) {
 
   const settings = {
     dots: false,
@@ -70,14 +75,14 @@ function Carousel() {
     <section className="grid grid-cols-12 gap-6">
       <div className="slider-container col-span-full sm:col-start-2 sm:col-end-12 lg:col-start-3 lg:col-span-8">
         <Slider {...settings}>
-          {CarouselImages.map((image) => (
+          {images.map((image, index) => (
             <div
-              key={image.name}
+              key={index}
               className="carousel-item relative w-full h-auto"
             >
               <Image
-                src={image.path}
-                alt={image.name}
+                src={image.imageURL}
+                alt={image.altText}
                 width={1000}
                 height={1000}
                 className="w-full object-contain h-auto"
@@ -90,4 +95,3 @@ function Carousel() {
   );
 }
 
-export default Carousel;

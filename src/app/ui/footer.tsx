@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { footerLinks } from "../lib/navigation";
+import { footerLinks } from "../../lib/navigation";
 
 export default function Foot() {
   return (
