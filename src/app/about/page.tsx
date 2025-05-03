@@ -5,16 +5,23 @@ import Link from "next/link";
 import Carousel from "../ui/carousel";
 
 import { getGalleryImages } from "@/lib/api/getGalleryImages";
+import { getBanner } from "@/lib/api/getBanner";
 export const revalidate = 60;
 
 export default async function About() {
   const images = await getGalleryImages();
-  console.log(images);
+  const banners = await getBanner();
+  const aboutBanner = banners.find((banner) => banner.page === "about") || {
+    title: "About Us",
+    subheading:
+      "Learn about who we are and what our mission is.",
+  };
+
   return (
     <main className="mx-auto">
       <Banner
-        title="About Us"
-        body="Learn about who we are and what our mission is."
+        title={aboutBanner.title}
+        body={aboutBanner.subheading}
         className="bg-primary text-primary-content"
       />
       <section className="md:grid md:grid-cols-12 gap-6 mb-12 flex flex-col-reverse">

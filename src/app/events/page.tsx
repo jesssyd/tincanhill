@@ -1,11 +1,18 @@
 import Banner from "../ui/banner";
+import { getBanner } from "@/lib/api/getBanner";
 
-export default function Events() {
+export default async function Events() {
+  const banners = await getBanner();
+  const eventsBanner = banners.find((banner) => banner.page === "events") || {
+    title: "Events",
+    subheading:
+      "Keep up to date with events hosted by the TCHCC or events related to the preservation of the Hill.",
+  };
   return (
     <main>
       <Banner
-        title="Events"
-        body="Keep up to date with events hosted by the TCHCC or events related to the preservation of the Hill."
+        title={eventsBanner.title}
+        body={eventsBanner.subheading}
         className="bg-primary text-primary-content"
       />
 

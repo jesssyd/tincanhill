@@ -2,15 +2,22 @@ import Banner from "../ui/banner";
 import Product from "./ui/product";
 
 import { getProducts } from "@/lib/api/getProducts";
+import { getBanner } from "@/lib/api/getBanner";
 
 export default async function Shop() {
   const products = await getProducts();
+  const banners = await getBanner();
+  const shopBanner = banners.find((banner) => banner.page === "shop") || {
+    title: "Shop",
+    subheading:
+      "Please support us and grab some merch! All proceeds contribute to TCHCC activities including the long term protection of the Hill.",
+  };
 
   return (
     <main>
       <Banner
-        title="Shop"
-        body="Please support us and grab some merch! All proceeds contribute to TCHCC activities including the long term protection of the Hill."
+        title={shopBanner.title}
+        body={shopBanner.subheading}
         className="bg-primary text-primary-content"
       />
 
