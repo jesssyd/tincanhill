@@ -1,5 +1,7 @@
 import Banner from "../ui/banner";
 import { getBanner } from "@/lib/api/getBanner";
+export const revalidate = 86400;
+
 
 export default async function Events() {
   const banners = await getBanner();

@@ -6,7 +6,7 @@ import Carousel from "../ui/carousel";
 
 import { getGalleryImages } from "@/lib/api/getGalleryImages";
 import { getBanner } from "@/lib/api/getBanner";
-export const revalidate = 60;
+export const revalidate = 86400;
 
 export default async function About() {
   const images = await getGalleryImages();
@@ -132,18 +132,3 @@ export default async function About() {
   );
 }
 
-{
-  /* <div>
-              <h3>Why Tin Can Hill?</h3>
-              <p>
-                Recreational users of Tin Can Hill are at risk of losing
-                enjoyment of this valuable piece of land. Construction is
-                proposed to place buildings and parking lots in place of what is
-                currently a recreational green space. Residents of Yellowknife
-                must stop the City of Yellowknife from rezoning the Tin Can Hill
-                Recreation Area for development. Tin Can Hill must be protected
-                from <span className="italic">any</span> development,
-                business, residential or otherwise. 
-              </p>
-            </div> */
-}

@@ -4,6 +4,7 @@ import Form from "../ui/form";
 
 import { getSupportCards } from "@/lib/api/getSupportCards";
 import { getBanner } from "@/lib/api/getBanner";
+export const revalidate = 86400;
 
 export default async function Support() {
   const cards = await getSupportCards();

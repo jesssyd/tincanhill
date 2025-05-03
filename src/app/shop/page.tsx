@@ -3,6 +3,7 @@ import Product from "./ui/product";
 
 import { getProducts } from "@/lib/api/getProducts";
 import { getBanner } from "@/lib/api/getBanner";
+export const revalidate = 86400;
 
 export default async function Shop() {
   const products = await getProducts();

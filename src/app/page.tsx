@@ -4,7 +4,7 @@ import Carousel from "./ui/carousel";
 import Form from "./ui/form";
 
 import { getGalleryImages } from "../lib/api/getGalleryImages";
-export const revalidate = 60;
+export const revalidate = 86400;
 
 export default async function Home() {
   const images = await getGalleryImages();

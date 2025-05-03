@@ -4,6 +4,8 @@ import Form from "../ui/form";
 
 import { getTimeline } from "@/lib/api/getTimeline";
 import { getBanner } from "@/lib/api/getBanner";
+export const revalidate = 86400;
+
 
 export default async function HistoryPage() {
   const entries = await getTimeline();
