@@ -55,7 +55,7 @@ export default function Form({ id }: FormProps) {
         <form onSubmit={onSubmit} id="join-form">
           <fieldset
             form="join-form"
-            className="fieldset w-xs bg-base-100 border border-base-300 p-4 rounded-box"
+            className="fieldset w-full bg-base-100 border border-base-300 p-4 rounded-box"
           >
             <legend className="hidden">Join our Mailing List</legend>
 
@@ -94,7 +94,7 @@ export default function Form({ id }: FormProps) {
             <div className="validator-hint hidden">Required</div>
 
             <p className="fieldset-label pb-0 text-base-content">Email</p>
-            <div className="join">
+            <div className="join w-full">
               <div>
                 <label className="input validator join-item" htmlFor="email-input">
                   <svg
